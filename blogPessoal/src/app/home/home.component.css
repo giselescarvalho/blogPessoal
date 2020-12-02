@@ -1,0 +1,10 @@
+.parallax {
+    background-image: url('https://3.bp.blogspot.com/_jEP6g-m9xjo/TB6tNTC1QoI/AAAAAAAABXI/px4K8QuHZfs/s1600/Chloroplasts_MC2.jpg');
+  
+    min-height: 500px;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
