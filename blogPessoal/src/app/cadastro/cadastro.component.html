@@ -9,17 +9,17 @@
           <div>
             <div class="form-group">
               <label for="nome">Nome</label>
-              <input type="text" class="form-control" id="nome" placeholder="Digite o seu nome aqui" [(ngModel)]='user.nome'>
+              <input type="text" class="form-control" id="nome" placeholder="Digite o seu nome aqui" [(ngModel)]='user.nome' [(ngModel)]='user.nome'>
             </div>
     
             <div class="form-group">
               <label for="email">E-mail</label>
-              <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" [(ngModel)]='user.usuario'>
+              <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" [(ngModel)]='user.usuario' [(ngModel)]='user.usuario' (input)='conferirSenha($event)' value='{{senha}}'>
             </div>
     
             <div class="form-group">
               <label for="senha">Senha</label>
-              <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" (input)='conferirSenha($event)' value='{{senha}}'>
+              <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" (input)='conferirSenha($event)' value='{{senha}}' [(ngModel)]='user.senha'>
             </div>
     
             <div class="form-group">
