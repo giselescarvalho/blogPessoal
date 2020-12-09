@@ -1,4 +1,8 @@
+import { AlertasService } from './../service/alertas.service';
+import { AuthService } from './../service/auth.service';
 import { Component, OnInit } from '@angular/core';
+import { User } from '../model/User';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastro',

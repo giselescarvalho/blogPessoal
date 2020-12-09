@@ -13,20 +13,19 @@ export class LoginComponent implements OnInit {
   userLogin: UserLogin = new UserLogin()
 
   constructor(
-  private authService: AuthService,
-  private router: Router
+    private authService: AuthService,
+    private router: Router
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
-  entrar(
-    this.authService.logar(this.userLogin).subscribe((resp: UserLogin) =>{
+  entrar() {
+    this.authService.logar(this.userLogin).subscribe((resp: UserLogin) => {
       this.userLogin = resp
-      localStorage.setItem('token', this.UserLogin.token)
+      localStorage.setItem('token', this.userLogin.token)
       this.router.navigate(['/feed'])
     })
-  ){
-
   }
+
 }
