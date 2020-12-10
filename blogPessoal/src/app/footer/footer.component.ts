@@ -10,7 +10,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 })
 export class FooterComponent implements OnInit {
 
-  faFacebook = faFacebook
+  
   faLinkedin = faLinkedin
   faInstagram = faInstagram
 
